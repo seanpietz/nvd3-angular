@@ -1,0 +1,19 @@
+
+<html ng-app="example_app">
+<meta charset="utf-8">
+<head>
+	<script src="../lib/d3/d3.v3.js"></script>
+	<script src="../lib/nvd3/nv.d3.js"></script>
+	<link rel="stylesheet" href="../lib/nvd3/nv.d3.css">
+	<script src="../lib/angular/angular.js"></script>
+	<script src="../lib/sugar.min.js"></script>
+	<script src="../nvd3-angular.js"></script>
+	<script src="example_app.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+		<button ng-click="changeChartType()">change chart type</button>
+		<button ng-click="changeData(test.data)">change data</button>
+		<nv-chart chart-object="test"></nv-chart>
+		<nv-chart chart-object="test2"></nv-chart>
+</body>
+</html>

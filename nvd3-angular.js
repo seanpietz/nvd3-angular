@@ -8,10 +8,6 @@ app.directive('nvChart', function() {
       restrict: 'E',
       scope: {
         chartObject: '='
-        // ctype: '=',
-        // data: '=',
-        // height: '=',
-        // width: '='
       },
       controller: function ($scope, $element, $attrs) {
         $scope.get_chart = function(type) {
@@ -31,7 +27,9 @@ app.directive('nvChart', function() {
       },
       link: function (scope, element, attrs) {
 
-        var id = "#" + scope.chartObject.id;
+        console.log(scope.chartObject)
+
+        var id = "#" + scope.chartObject['id'];
 
         function render(chart) {
           chart.xAxis
